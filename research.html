@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Author" content="21049544 Nischit Shrestha">
+    <meta name="keyword" content="html">
+	<title>BookSansar</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <style type="text/css">
+        /* styling for wrapper div */
+        .wrapper
+        {
+            width: 100%;
+        }
+        /* styling for the div pics for inserting the pics */
+        .pics
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;  
+        }
+        /* styling for the image inserted */
+        .pics img
+        {
+            width: 90%;
+            border: 5px solid black ;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!--section for navigation bar-->
+	<section id="header">
+		<a href="homepage.html"><img src="img/logo.png" class="logo" alt=""></a>
+		<div>
+			<ul id= "navbar">
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a style="color: black;" href="research.html">Research</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section>
+		 <!-- creating a wrapper div -->
+    <div class="wrapper">
+
+        <!-- heading and div for reseach puropse 1 -->
+        <h2 style="margin-left: 35px; font-size: 30px;">Research-1: Navigation Bar</h2>
+        <div class="pics">
+            <a href="bookecommerce.html"><img src="research/navigationbar.jpg"></a>
+            <a href="https://www.poketo.com/"><img src="research/nav1.jpg"></a>
+        </div>
+         <p style="padding-left: 35px;"> Here in the above picture.The left side of the image shows output of my website while the right side of image is refernce. The refrence that I took from the website is to hover the navigation bar and to use the background color to make the website attractive.</p>   
+    </div>
+    <hr>
+
+    <div class="wrapper">
+        <!-- heading and div for reseach puropse 2 -->
+        <h2 style="margin-left: 35px; font-size: 30px;">Research-2: Footer</h2>
+        <div class="pics">
+            <a href="../home page.html"><img src="research/footer.jpg"></a>
+            <a href="https://www.chobani.com/"><img src="research/footer1.jpg"></a>
+        </div>
+         <p style="padding-left: 35px;"> Here in the above picture. The left side of the image shows output of my website while the right side of image is refernce. The refrence that I took from the website is to keep the logo and to use the icon of facebook, twitter, youtube and instagram.
+         </p>   
+    </div>
+    <hr>
+
+     <div class="wrapper">
+        <!-- heading and div for reseach puropse 3 -->
+        <h2 style="margin-left: 35px; font-size: 30px">Research-3: Blog</h2>
+        <div class="pics">
+            <a href="blog.html"><img src="research/blog.jpg"></a>
+            <a href="https://blog.charitywater.org/">
+                <img src="research/blog1.jpg"></a>
+        </div>
+         <p style="padding-left: 35px;"> Here in the above picture. The left side of the image shows output of my website while the right side of image is refernce. In this blog page i replicted the blog page i.e the title style as well as it gave me idea to put a picture in the blog page.
+    </div>
+    <hr>
+
+     <div class="wrapper">
+        <!-- heading and div for reseach puropse 4 -->
+        <h2 style="margin-left: 35px; font-size: 30px">Research-4: Contact Us</h2>
+        <div class="pics">
+            <a href="contact.html"><img src="research/contact.jpg"></a>
+            <a href="https://unbounce.com/contact-us/"><img src="research/contact1.jpg"></a>
+        </div>
+         <p style="padding-left: 35px;"> Here in the above picture. The left side of the image shows output of my website while the right side of image is refernce. I implemented the idea of writing a warm welcome message like " We'd Love To Hear From You", As well as layout format of the contact page. 
+    </div>
+
+	</section>
+
+
+	<!-- Footer-->
+<footer class="section-p1">
+	<!--Column 1 of footer -->
+		<div class="col">
+			<img src="img/1.png" alt="">
+			<h4>Contact</h4>
+			<p>Address: Sydney, Australia</p>
+			<p>Phone: +977696969696</p>
+			<p>Hours: 10:00 to 19:00, Mon-Fri</p>
+            <!--Internal javascript for date and time-->
+			<p id="date"></p>
+        <br>
+
+        
+        
+        <script type="text/javascript">
+            
+
+            function display_date() 
+            {
+                document.getElementById('date').innerHTML = Date();
+                setTimeout(display_date,1000)
+            }
+
+            display_date();
+        </script>
+				
+			</div>
+    <!--Column 2 of footer -->
+			<div class="quicklink">
+                    <table>
+                        <tr>
+                            <h4>Quick Links</h4>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="product.html">Product</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="contact.html">Contact Us</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="blog.html">Blog</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="research.html">Research</td></a>
+                        </tr>
+                    </table>
+                </div>
+
+    <!--Column 3 of footer -->
+		<div class="col1">
+			<h4>About us</h4>
+			<p>BookSansar is a platform where <br>one can buy books of different<br> genres online.</p>
+		</div>
+        <!--Column 4 of footer -->
+		<div class="follow">
+				<h4>Follow us</h4>
+				<div class="icon">
+					<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+					<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+
+				</div>
+			</div>
+
+    <!--Column 5 of footer -->
+				<div class="copyright">
+					<p>©2022, Nischit Shrestha, BookSansar</p>
+				</div>
+	</footer>
+
+
+</body>
+</html>

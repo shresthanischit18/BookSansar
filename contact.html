@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Author" content="21049544 Nischit Shrestha">
+    <meta name="keyword" content="html">
+	<title>BookSansar</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+	<style type="text/css">
+		/* styling of div message to align the message in the center */
+		.message
+		{
+			text-align: center;
+
+		}
+		/* styling of wrapper div where font size and width is maintained */
+		.wrapper
+		{
+			width: 80%;
+			margin: auto; 	
+			font-size: 30px;
+
+		}
+		/* styling for the row-1 div to make the contents inside be in a row */
+		.row1
+		{
+			display: flex;
+			justify-content: space-around;
+			margin: 40px 0px;
+		}
+		/* styling of the input box */
+		input
+		{
+			width: 350px;
+			height: 30px;
+		}
+		/* styling of div query for margin purpose */
+		.query
+		{
+			margin-left: 120px;
+		}
+		/* styling for the div where button belongs */
+		.but
+		{
+			margin-left: 120px;
+			margin-bottom: 10px;
+			
+		}
+		/* styling for the button i.e. defining height and width */
+		button
+		{
+			height: 40px;
+			width: 100px;
+			
+
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<!--section for navigation bar-->
+	<section id="header">
+		<a href="homepage.html"><img src="img/logo.png" class="logo" alt=""></a>
+		<div>
+			<ul id= "navbar">
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a style="color: black;" href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<div class="message">
+ 		<h1> We'd Love To Hear From You</h1>
+ 		<img style="height: 150px;" src="img/back.jpg">
+ 		  
+ 	
+ 		<p style="padding-top: 50px;">You can ask any query related our website. 24hrs help service is available.</p>
+
+ 	</div>	
+ 			<hr>
+ 	
+ 	
+ 	<!-- form validation -->
+ 	<form name="check" onsubmit="validation()">
+
+ 	<!-- making a wrapper div -->	
+ 	<div class="wrapper">	
+ 		<div class="row1">
+ 			<div class="Fname">
+ 				First Name<br>
+ 				<input type="text" name="Fname" placeholder="Please enter your first name">
+ 				<br>
+ 			</div>
+
+ 			<div class="Lname">
+ 				Last Name<br>
+ 				<input type="text" name="Lname" placeholder="Please enter your last name">
+ 			</div>
+ 		</div>
+
+
+ 		<div class="row1">
+ 			<div class="Email">
+ 				Email Address<br>
+ 				<input type="text" name="Email" placeholder="Enter your email address like xydfa@gmail.com">
+ 				<br>
+ 			</div>
+
+ 			<div class="Phone">
+ 				Phone Number<br>
+ 				<input type="text" name="Num" placeholder="Please enter your Phone number(10 digits)">
+ 			</div>
+ 		</div>
+
+ 			<div class="query">
+ 				Your Questions?<br>
+ 				<textarea placeholder="Please let us know your Questions." rows="10" cols="80" name="text"></textarea>
+ 			</div>
+
+ 			<div class="but">
+ 				<button type="submit">Sumbit</button>
+ 			</div>
+
+ 	</div>
+
+ 	</form> 
+	</section>
+
+
+		<!-- Footer-->
+<footer class="section-p1">
+	<!--Column 1 of footer -->
+		<div class="col">
+			<img src="img/1.png" alt="">
+			<h4>Contact</h4>
+			<p>Address: Sydney, Australia</p>
+			<p>Phone: +977696969696</p>
+			<p>Hours: 10:00 to 19:00, Mon-Fri</p>
+			<!--Internal javascript for date and time-->
+			<p id="date"></p>
+        <br>
+
+        
+        
+        <script type="text/javascript">
+            
+
+            function display_date() 
+            {
+                document.getElementById('date').innerHTML = Date();
+                setTimeout(display_date,1000)
+            }
+
+            display_date();
+        </script>
+
+				
+			</div>
+    <!--Column 2 of footer -->
+			<div class="quicklink">
+                    <table>
+                        <tr>
+                            <h4>Quick Links</h4>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="product.html">Product</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="contact.html">Contact Us</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="blog.html">Blog</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="research.html">Research</td></a>
+                        </tr>
+                    </table>
+                </div>
+
+    <!--Column 3 of footer -->
+		<div class="col1">
+			<h4>About us</h4>
+			<p>BookSansar is a platform where <br>one can buy books of different<br> genres online.</p>
+		</div>
+    <!--Column 4 of footer-->
+		<div class="follow">
+				<h4>Follow us</h4>
+				<div class="icon">
+					<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+					<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+
+				</div>
+			</div>
+
+    <!--Column 5 of footer -->
+				<div class="copyright">
+					<p>©2022, Nischit Shrestha, BookSansar</p>
+				</div>
+	</footer>
+
+</body>
+</html>

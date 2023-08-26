@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Author" content="21049544 Nischit Shrestha">
+    <meta name="keyword" content="html">
+	<title>BookSansar</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!--This section is about navigation bar-->
+	<section id="header">
+		<a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+		<div>
+			<ul id= "navbar">
+				<li><a style="color: black;" href="homepage.html">Home</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</section>
+
+    <!-- This section is for Homepage-->
+     <section id="Homepage">
+		<h4>Come for the book and leave with the knowledge.</h4>
+		<h2>Get your Dream Book!</h2>
+		<p>Save upto 70% off in spring(Season of books)</p>
+		<button class="normal"><a href="product.html" style="text-decoration: none; color: orange;">Visit Us</button>
+
+	</section>
+
+
+
+       <!-- This section is for feature-box-->
+	<section id="features" class="section-p1">
+
+		   <!-- This div is for feature box free shipping-->
+		<div class="fe-box">
+			<img src="img/fs.jpg" alt="">
+			<h6>Free shipping</h6>
+		</div>
+
+     <!-- This div is for feature box Happy Sale-->
+	<div class="fe-box">
+			<img src="img/hs.jpg" alt="">
+			<h6>Happy Sale</h6>
+		</div>
+
+        <!-- This div is for feature box Online Order-->
+		<div class="fe-box">
+			<img src="img/od.jpg" alt="">
+			<h6>Online Order</h6>
+		</div>
+
+        <!-- This div is for feature box Save Money-->
+		<div class="fe-box">
+			<img src="img/sm.png" alt="">
+			<h6>Save Money</h6>
+		</div>
+
+        <!-- This div is for feature box Support-->  
+		<div class="fe-box">
+			<img src="img/support.png" alt="">
+			<h6>Support</h6>
+		</div>
+	</section>
+
+    <!--This section is for featured products-->
+	<section id="product" class="section-p1">
+		<h2>Featured Products</h2>
+		<p>Choose, Buy and Gain Knowledge</p>
+		<div class="pro-container">
+			<div class="pro">
+				<img src="img/book1.jpg" alt="">
+				<div class="des">
+					<span>Action and Adventure</span>
+					<h5>The Unspoken Name</h5>
+					<h4>$28</h4>
+				</div>
+			
+			</div>
+			<div class="pro">
+				<img src="img/book4.jpg" alt="">
+				<div class="des">
+					<span>Drama</span>
+					<h5>Dramatic Story Book.</h5>
+					<h4>$15</h4>
+				</div>
+
+			</div>
+			<div class="pro">
+				<img src="img/book3.jpg" alt="">
+				<div class="des">
+					<span>Novel</span>
+					<h5>Story of Witcher.</h5>
+					<h4>$30</h4>
+				</div>
+						</div>
+			<div class="pro">
+				<img src="img/book2.jpg" alt="">
+				<div class="des">
+					<span>Action and Adventure</span>
+					<h5>Crime and Drama</h5>
+					<h4>$18</h4>
+				</div>
+		
+			</div>
+			<div class="pro">
+				<img src="img/book5.jpg" alt="">
+				<div class="des">
+					<span>Fairytale</span>
+					<h5>The Boy With One Name</h5>
+					<h4>$24</h4>
+				</div>
+			
+			</div>
+			<div class="pro">
+				<img src="img/book6.jpg" alt="">
+				<div class="des">
+					<span>Novel</span>
+					<h5>Fantesy Literature</h5>
+					<h4>$12</h4>
+				</div>
+		
+			</div>
+
+	</section>
+
+	<section id="banner" class="section-m1">
+		<!-- This section is for the banner-->
+		<h4>Offer Offer Offer!!!</h4>
+		<h2>Get upto 70% off on books</h2>
+		<button class="normal"><a href="product.html" style="text-decoration: none; color: black;">Explore More</button>
+
+		
+	</section>
+	<!-- Footer-->
+<footer class="section-p1">
+	<!--Column 1 of footer -->
+		<div class="col">
+			<img style="width: 47%;" src="img/1.png" alt="">
+			<h4>Contact</h4>
+			<p>Address: Sydney, Australia</p>
+			<p>Phone: +977696969696</p>
+			<p>Hours: 10:00 to 19:00, Mon-Fri</p>
+			<p id="date"></p>
+        <br>
+
+        
+        
+        <script type="text/javascript">
+            
+
+            function display_date() 
+            {
+                document.getElementById('date').innerHTML = Date();
+                setTimeout(display_date,1000)
+            }
+
+            display_date();
+        </script>
+				
+			</div>
+    <!--Column 2 of footer -->
+			<div style="padding-left: 10px;" class="quicklink">
+                    <table>
+                        <tr>
+                            <h4>Quick Links</h4>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="product.html">Product</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="contact.html">Contact Us</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="blog.html">Blog</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="research.html">Research</td></a>
+                        </tr>
+                    </table>
+                    <!--Column 3 of footer-->
+                </div>
+                <div style="padding: 160px 10px;" class="aboutus">
+                	<h4>About us</h4>
+                	<p>BookSansar is a platform where <br>one can buy books of different<br> genres online.</p>
+        
+                </div>
+                <!--Column 4 of footer-->
+                <div>
+                	<h4 style="padding: 160px 100px">Follow us</h4>
+                </div>
+                <div>
+                	<h4></h4>
+                </div>
+                <!--Column 5 of footer-->
+                <div class="copyright">
+                	<p>©2022, Nischit Shrestha, BookSansar</p>
+                </div>
+
+
+    
+	</footer>
+
+			
+</body>
+</html>

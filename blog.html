@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Author" content="21049544 Nischit Shrestha">
+    <meta name="keyword" content="html">
+	<title>BookSansar</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Internal css for slider-->
+	<style type="text/css">
+		.slider
+	{
+		width: 80%;
+		height: 380px;
+		margin: 20px auto;
+		overflow: hidden;
+		box-shadow: 5px 5px 5px 5px grey;
+	}
+	/*css for image*/
+	img
+	{
+		width: 100%;
+		height: 100%;
+	}
+	</style>
+</head>
+<body>
+	<!--section for navigation bar-->
+	<section id="header">
+		<a href="homepage.html"><img src="img/logo.png" class="logo" alt=""></a>
+		<div>
+			<ul id= "navbar">
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a style="color: black;" href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</section>
+	<!--section for image slider and title-->
+	<section>
+		<h4 style="text-align: center; font-size: 80px; ">Technology</h4>
+		<div class = "slider">
+		<div id= "img">
+			<img src="e.jpg">
+		</div>
+	</div>
+	<script type="text/javascript">
+		var images = ['img/tech1.jpg','img/tech2.jpg', 'img/tech3.jpg'];
+		var x = 0;
+		var imgs = document.getElementById('img');
+		setInterval(slider, 3000);
+		function slider()
+		{
+			if (x < images.length)
+			{
+				x = x + 1;
+
+			}
+			else
+			{
+				x = 1;
+			}
+			imgs.innerHTML = "<img src=" + images[x - 1 ] + ">";
+		} 
+	</script>
+	</section>
+     
+    <!--section for paragraph-->
+	<section>
+     <h3 style="padding-left:300px; padding-bottom: 0px; padding-top: 0px;color: #3A3A3A;"><b> By- Nischit Shrestha </b></h3>
+      
+
+   <!-- Div for the context of the vlog -->
+    <div>
+
+     <p style="padding-left:300px; padding-right: 280px"> 
+
+        Technology is a scientific knowledge which can be used for various practical purpose or applications wheather in industries, factories, science experiements and also in daily activities.Technology usually involves a particular device, which can be very simple or very complex.There are many types of technology, as it can be very simple or complex. One type is mechanical technology including wheels, cams, levers, gears, belts and motors. It is mechanical that rotates or allows movement in one direction and causes another type of movement. The wheel is probably one of the most important technological advances in human history, but it's still very simple.
+
+        <br>
+        <br>
+        All the objects around us in our daily lives are the product of various technological advances that have evolved over the centuries of our existence. We have transformed natural resources to create tools and machines that make our lives easier and satisfy our curiosity and desire for excellence. Computers, tablets and smartphones, locomotives, cars and planes, light bulbs and microchips, the first person of the moon, and the conquest of  space are milestones in our state-of-the-art technology.
+
+     </p>
+
+     <p style="padding-left:300px; padding-right: 280px">
+         Technology is not only about  understanding how the natural world works, which is the goal of science, but also taking action to meet human needs. The invention of the microscope was driven by the need to explore a small world  beyond our mere field of view. It uses much more than scientific knowledge and includes  facts, practical craft knowledge and theoretical knowledge as well as value. The iPod is an example of how to combine physics and creative design to create a small device that holds so many music  to create an iconic essential. Technology is a hands-on profession and requires familiarity with many areas such as engineering, communication, design, development, innovation, management, manufacturing, modeling and systems thinking. But technology also offers us a variety of products whose good, evil, or their usefulness is controversial. Similarly, the processes involved in creating and using technology mean that we  all need to be concerned about whether it will bring lasting benefits to us and everyone else in the future.
+         <br>
+         <br>
+        There is no doubt that technical progress fundamentally changes our way of thinking and lives in the same way as  surrounding environments. We trained a wonderful land area for metal and mineral extraction  that we enable machine and tools, and we extend a large number of trees to get wood Cut, we have  synthesized chemical compounds in laboratory with our interaction, change the environment, and  use combustion products that emit CO2  atmosphere, our daily activities Many waste of waste ... Forest decline, climate change, acid and radiative rain and  ozone layer holes are developed and used by humans that surround our planet Earth with various technologies. 
+        <br>
+        <br>
+         Therefore, people develop technologies that are cleaner and respect our environment and ourselves.
+
+     </p>
+
+    </div>
+	</section>
+
+
+		<!-- Footer-->
+<footer class="section-p1">
+	<!--Column 1 of footer -->
+		<div class="col">
+			<img style="width: 47%;" src ="img/1.png" alt="">
+			<h4>Contact</h4>
+			<p>Address: Sydney, Australia</p>
+			<p>Phone: +977696969696</p>
+			<p>Hours: 10:00 to 19:00, Mon-Fri</p>
+			<!--Internal javascript for date and time-->
+			<p id="date"></p>
+		<br>
+
+		
+		
+		<script type="text/javascript">
+			
+
+			function display_date() 
+			{
+				document.getElementById('date').innerHTML = Date();
+				setTimeout(display_date,1000)
+			}
+
+			display_date();
+		</script>
+				
+			</div>
+    <!--Column 2 of footer -->
+			<div class="quicklink">
+                    <table>
+                        <tr>
+                            <h4>Quick Links</h4>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="product.html">Product</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="contact.html">Contact Us</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="blog.html">Blog</td></a>
+                        </tr>
+                        <tr>
+                            <td><a style="font-size: 16px;" href="research.html">Research</td></a>
+                        </tr>
+                    </table>
+                </div>
+
+    <!--Column 3 of footer -->
+		<div class="col1">
+			<h4>About us</h4>
+			<p>BookSansar is a platform where <br>one can buy books of different<br> genres online.</p>
+		</div>
+        <!--Column 4 of footer -->
+		<div class="follow">
+				<h4>Follow us</h4>
+				<div class="icon">
+					<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+					<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+					<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+
+				</div>
+			</div>
+
+            <!--Column 5 of footer -->
+				<div class="copyright">
+					<p>©2022, Nischit Shrestha, BookSansar</p>
+				</div>
+					</footer>
+
+
+</body>
+</html>
